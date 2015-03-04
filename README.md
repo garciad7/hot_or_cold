@@ -1,2 +1,4 @@
-# hot_or_cold
-hot or cold project
+hot-or-cold-page
+======================
+
+Hold or Cold Game

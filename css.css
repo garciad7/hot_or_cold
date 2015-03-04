@@ -1,0 +1,259 @@
+/****************
+TABLE OF CONTENTS
+
+Line #      Name
+ 15         Base
+ 81         Layout
+104         Module
+144         State
+234         Theme
+*****************/
+
+
+
+
+/*  BASE  */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+
+
+h1 {
+	font-family: 'MuseoSans_500', helvetica, tahoma, arial, sans-serif;
+	font-size: 24px;
+}
+
+p {
+	font-family: 'MuseoSans_500', helvetica, tahoma, arial, sans-serif;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 15px 0;
+	line-height: 24px;
+}
+
+
+/*  LAYOUT  */
+.content-container {
+	height: auto;
+	width: 560px;
+}
+
+.form-buttons {
+	width: 250px;
+}
+
+.spaced-top {
+	margin-top: 100px;
+}
+
+.spaced-top-bottom {
+	margin: 30px auto;
+}
+
+.to-center {
+	margin: 0 auto;
+}
+
+
+/***  MODULE  ***/
+button {
+	font-family: 'MuseoSans_500', helvetica, tahoma, arial, sans-serif;
+	font-size: 15px;
+	height: 30px;
+	line-height: 25px;
+	text-decoration: none;
+	width: 120px;
+}
+
+.circle {
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+}
+
+form {
+	width: 280px;
+}
+
+.game-message {
+	color: #888;
+	display: block;
+	font-family: 'raleway_thin', helvetica, tahoma, arial, sans-serif;
+	font-size: 36px;
+	font-weight: bolder;
+	line-height: 180px;
+	width: 200px;
+}
+
+input {
+	width: 100%;
+}
+
+.previous-guesses {
+	color: #888;
+	font-size: 10px;
+}
+
+
+/***  STATE  ***/
+.bingo {
+	background-color: #77933C;
+	border: 2px solid #77933C;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.cold {
+	background-color: #00B0F0;
+	border: 2px solid #00B0F0;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.jotunheim {
+	background-color: #005D7E;
+	border: 2px solid #005D7E;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.hot {
+	background-color: #953735;
+	border: 2px solid #953735;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.lukewarm {
+	background-color: #DBD40A;
+	border: 2px solid #DBD40A;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.unfilled {
+	background-color: #fff;
+	border: 2px solid #aaa;
+}
+
+.warm {
+	background-color: #DC6C0A;
+	border: 2px solid #DC6C0A;
+	-moz-transition:background-color 2s, border 2s;
+    -webkit-transition:background-color 2s, border 2s;
+    -o-transition:background-color 2s, border 2s;
+    transition:background-color 2s, border 2s;
+}
+
+.circle-filled {  /* This sets the text to white when the circle is filled */
+	color: #fff;
+}
+
+.submit {
+	background-color: #00B0F0;
+	border: 1px solid #00B0F0;
+	color: #fff;
+}
+
+.submit:hover {
+	background-color: #00B0F0;
+	border: 1px solid #005D7E;
+	color: #fff;
+}
+
+
+.clear {
+	background-color: #DC6C0A;
+	border: 1px solid #DC6C0A;
+	color: #fff;
+}
+
+.clear:hover {
+	background-color: #DC6C0A;
+	border: 1px solid #9D4B07;
+	color: #fff;
+}
+
+
+/***  THEME  ***/
+@font-face {
+    font-family: 'MuseoSans_500';
+    src: url('fonts/MuseoSans_500-webfont.eot');
+    src: url('fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('fonts/MuseoSans_500-webfont.svg#MuseoSans_500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_thin';
+    src: url('fonts/raleway_thin-webfont.eot');
+    src: url('fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway_thin-webfont.woff') format('woff'),
+         url('fonts/raleway_thin-webfont.ttf') format('truetype'),
+         url('fonts/raleway_thin-webfont.svg#raleway_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center-text {
+	text-align: center;
+}

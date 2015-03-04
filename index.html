@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hot or Cold: A Guessing Game</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css.css" />
+	</head>
+
+	<body>
+		<div class="content-container to-center">
+			<div class="circle unfilled spaced-top-bottom">
+				<p class="game-message center-text">hot or cold</p>
+			</div>
+
+			<div class="guess-list spaced-top-bottom">
+				<p class="previous-guesses center-text">No guesses yet. Start playing!</p>
+			</div>
+
+			<form class="to-center spaced-top-bottom">
+				<input type="number" placeholder="Enter a number from 1 to 100." required="true" autocomplete="off"/>
+				<div class="form-buttons spaced-top-bottom">
+					<button type="submit" class="center-text submit">Submit</button>
+					<button type="reset" class="center-text clear">Clear</button>
+				</div>
+			</form>
+
+			<div class="game-instructions spaced-top">
+				<h1 class="center-text">How to Play Hot or Cold</h1>
+				<p class="center-text">A random number from 1 to 100 is selected by the computer.  You must guess the number.  Enter your guess into the number box and click submit.  You can always remove your entered guess by clicking the clear button.  Once you guess the correct answer, your screen will display a green circle.  At that point, the game will be over.  If you'd like to play another round, click your refresh button.</p>
+
+				<p class="center-text">Ready to play?  Good luck!</p>
+			</div>
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="scripts/jquery2-0-1.min.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</body>
+</html>
